@@ -7,14 +7,25 @@
 
     <!-- dependencies -->
     <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
     <!-- your scripts -->
     <script src="env/config.js"></script>
     <script src="scripts/app.js"></script>
   </head>
   <body>
     <div id="main">
+
+      <button id="home">Home Room</button>
+      <div><span>Current Room: </span><span id="currentRoom">Home</span></div>
+
       <h1>chatterbox</h1>
+      <form id="send">
+        <textarea type="text" id="message" placeholder="Your message..."></textarea>
+        <button class="submit" type="submit">Send</button>
+      </form>
       <!-- Your HTML goes here! -->
+      <div id="chats"></div>
+      <nav id="roomSelect"></nav>
     </div>
   </body>
 </html>
